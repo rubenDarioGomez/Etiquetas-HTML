@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+
+    <table border="3">
+        <!--creacion de tablas-->
+        <colgroup span="2" style="background-color: rgb(173, 19, 19);">
+            <!--agrupa columnas en orden-->
+        </colgroup>
+        <colgroup>
+            <col style="background-color: #006400;">
+            <col style="background-color: #0064;">
+            <col style="background-color: #fff;">
+        </colgroup>
+
+        <caption>
+            <!--titulo de la tabla-->
+            titulo tablas
+        </caption>
+
+        <thead>
+            <!--cabeza de la tabla-->
+            <tr>
+                <td colspan="2">celdas 1 y dos</td>
+                <!--colspan permite abarcar las celdas que nesesitamos en el thead-->
+                <td colspan="3">celdas 3 4 y 5</td>
+
+            </tr>
+            <tr>
+                <th>Celda 1</th>
+                <th>Celda 2</th>
+                <th>Celda 3</th>
+                <th>Celda 4</th>
+                <th>Celda 5</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!--cuerpo de la tabla-->
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+
+            </tr>
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+            </tr>
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+            </tr>
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+            </tr>
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+            </tr>
+            <tr>
+                <td>info 1</td>
+                <td>info 2</td>
+                <td>info 3</td>
+                <td>info 4</td>
+                <td>info 5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--pie de pagina de la tabla-->
+            <tr>
+                <td>pide de tabla</td>
+                <td>pide de tabla</td>
+
+            </tr>
+        </tfoot>
+    </table><br>
+
+  
+
+    <table border="3" style="border-collapse: collapse;">
+        <thead style="background-color: #5e3c58;">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ruben</td>
+                <td>Ocampo</td>
+                <td>Medellin</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dario</td>
+                <td>Gomez</td>
+                <td>Tititibi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Andrea</td>
+                <td>Posada</td>
+                <td>La Union</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jenifer</td>
+                <td>Hernandez</td>
+                <td>San Pedro</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Estela</td>
+                <td>Ocampo</td>
+                <td>La ceja</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Gonzalo</td>
+                <td>Gomez</td>
+                <td>Rionegro</td>
+            </tr>
+        </tbody>
+
+    </table> <br>
+
+    <table border="3" style="border-collapse: collapse;">
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Item 4</td>
+            <td>5tem 5</td>
+            <td colspan="2">item 6</td>
+        </tr>
+        <tr>
+            <td>Item 7</td>
+            <td rowspan="2">Item 8</td>
+            <td>Item 9</td>
+        </tr>
+        <tr>
+            <td>Item 10</td>
+            <td>Item 11</td>
+            <td>Item 12</td>
+        </tr>
+
+    </table><br>
+
+    <table border="3" style="border-collapse: collapse;">
+        <tr>
+            <td>Item 1</td>
+            <td rowspan="2">Item 2</td>
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+    </table><br>
+
+    <table border="3" style="border-collapse: collapse;">
+        <tr>
+            <td>celda</td>
+            <td colspan="4" style="text-align: center;">celda</td>
+            <td>celda</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td rowspan="3">celda</td>
+        </tr>
+
+        <tr>
+            <td>celda</td>
+            <td colspan="2" style="text-align: center;">celda</td>
+            <td>celda</td>
+        </tr>
+
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">celda</td>
+            <td>celda</td>
+            <td rowspan="2">celda</td>
+            <td>celda</td>
+            <td rowspan="3">celda</td>
+            <td rowspan="3">celda</td>
+        </tr>
+
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+
+        <tr>
+            <td>celda</td>
+            <td>celda</td>
+            <td>celda</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

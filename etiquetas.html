@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos html</title>
+    <link rel="shortcut icon" href="img/Logotipo.png" type="image/x-icon">
+</head>
+
+
+
+<body>
+    <!--Cuerpo Principal del una pagina web, en esta parte va todo lo visual de la pagina web-->
+  
+
+
+    <main > <!--Esta etiqueta sirve para centrar el contenido de la pagina-->
+
+        <nav id="nav"><!--Contiene enlaces de la pagina web-->
+            <a href="#">darioWeb</a>
+        </nav>
+
+        <header id='header'>
+            <!--Encabezado de la pagina web-->
+            <img src="img/Logotipo.png" alt="decripcion de la imagen" width="50%" height="20%">
+            <!--etiqueta para agregar imagenes-->
+        </header>
+
+        <section class="sec1">
+            <!--Se utilixa para dividir la pagina en secciones-->
+            <article>
+                <!--Se ustilza para publicar articulos    -->
+                <h1>Titulo</h1>
+                <!--esta etiquet es para los titulos y va desde h1 a h6 y cambia de tamaño descendente-->
+                <p>
+                    <!--La etiqueta<p> son para parrafos-->
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    <!--esta etiqueta nos da un salto de parrafo-->
+                    Unde commodi corrupti delectus, dolorum
+                    nemo
+                    vero quidem accusamus, ut eius maiores consequuntur in excepturi, amet accusantium velit rerum ab.
+                    Inventore, doloribus!
+                </p>
+            </article>
+            <hr style="border: 5px solid blue;">
+            <!--Etiqueta para separar con una linea-->
+
+            <pre style="white-space: pre-line;"> <!--etiqueta para parrafos sin orden automatico-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ea cupiditate possimus ipsum, dolore vitae aspernatur quisquam hic repellendus, quas rerum, cum laboriosam. Enim animi quos quia cumque eum dolorem eos?
+            </pre>
+            <article>
+                <!--Se ustilza para publicar articulos    -->
+                <h1>Titulo del articulo</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi corrupti delectus, dolorum
+                    nemo
+                    vero quidem accusamus, ut eius maiores consequuntur in excepturi, amet accusantium velit rerum ab.
+                    Inventore, doloribus!</p>
+            </article>
+        </section>
+
+        <!--section>aside*2>h1{titulo}>p{Lorem Ipsum} (Esta es una forma de agregar elementos rapidamente con el pluggin EMMET)-->
+        <section>
+            <aside>
+                <!--Contenido externo de la pagina web como publicidad-->
+                <h1>titulo </h1>
+                <p>Lorem Ipsum</p>
+            </aside>
+            <aside>
+                <h1>titulo </h1>
+                <p>Lorem Ipsum</p>
+            </aside>
+        </section>
+
+        <!--section>article>h$*6 (De esta manera agregamos los encabezados del nivel del 1 al 6)-->
+        <section>
+            <article>
+                <h1>Titulos de diferente nivel</h1>
+                <h2>Titulos de diferente nivel</h2>
+                <h3>Titulos de diferente nivel</h3>
+                <h4>Titulos de diferente nivel</h4>
+                <h5>Titulos de diferente nivel</h5>
+                <h6>Titulos de diferente nivel</h6>
+            </article>
+        </section>
+
+        <!--La etiqiere <ins es para agregar una acualizacion y <Del para eliminarla>-->
+        <p>Este es un contenido, <ins cite="url o direccion de la actualiacion" datetime="2022-11-22 19:20">luego lo
+                actualizamos </ins> <del cite="#html" datetime="2022-11-22">y este contenido fue eliminado</del></p>
+
+        <blockquote style="border: 2px solid blue;"><!--ayuda a diferenciar un  texto de los demas-->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque maxime reprehenderit ducimus.
+        </blockquote>
+
+        <ol id="ol"> <!--lista ordenada-->
+            <li>lista</li>
+            <li>ordenada</li>
+        </ol>
+
+        <ul><!--lista desordenada-->
+            <li>lista</li>
+            <li>sin</li>
+            <li>orden</li>
+        </ul>
+
+        <!--con figure captiom-->
+        <figure style="border: 1px solid white;"><!--etiqueta para ordenar una imagen-->
+            <img src="img/Logotipo.png" alt="" width="100%">
+            <figcaption><!--nos ayuda a colocar una descripcion a la imagen-->
+                logotipo de humanWare insertada con las etiquetas figure y figCaption
+            </figcaption>
+        </figure>
+        <!--sin figure captiom-->
+        <figure style="border: 1px solid white;"><!--etiqueta para ordenar una imagen-->
+            <img src="img/Logotipo.png" alt="" width="100%">
+            <p>
+                logotipo de humanWare insertada con las etiquetas figure y sin figCaption
+            </p>
+        </figure>
+
+        <div><!--Separador de contenido-->
+            <img src="img/Logotipo.png" alt="" width="100%">
+            <p>
+                logotipo de humanWare insertada con las etiqueta div
+        </div>
+
+        <h1>Enlaces</h1>
+        <a href="https://www.google.com" target="_blank">
+            <!--enlaces a direcciones weeb o dentro de la misma pagina-->
+            Enlace a google
+        </a><br>
+
+        <a href="https://vuelaaltoltda.000webhostapp.com/" target="miValor">
+            <!--enlaces a direcciones web o dentro de la misma pagina-->
+            Enlace a vuela alto
+        </a><br>
+
+        <iframe src="enlace.html" frameborder="1" width="500" height="500">
+            <!--etiqueta que nos agrega una pagina web en la nuestra-->
+        </iframe><br>
+        <iframe src="https://vuelaaltoltda.000webhostapp.com/" width="100%" frameborder="1"></iframe>
+
+
+        <a href="#nav">enlace interno al navigator</a> <br>
+        <a href="#ol">enlace interno a la lista ordenada</a> <br>
+        <a href="mailto:rubend4315@hotmaol.com">ensale a correo</a><br>
+        <a href="img/Logotipo.png" download="">Descargar imagen</a>
+
+        <p>
+            <i>
+                la etiqueta i muestra la letra en cursiva
+            </i><br><!--br sirve para hacer saltos de linea-->
+            <em>
+                la etiqueta em es tambien para subrayar el texto solo que este es para demostrar mas importancia de este
+                para los buscadores
+            </em><br>
+            <b>
+                la etiqueta b es para la letra negrita
+            </b><br>
+            <strong>
+                la etiqueta strong es tambien para el texto en negrita solo que este es para demostrar mas importancia
+                de este para los buscadores
+            </strong> <br>
+            <u>
+                la etiqueta u es para subrayar el texto
+            </u><br>
+            <small>
+                Small sirve para colocar un texto pequeño
+            </small><br>
+            <big>
+                big nos muestra textos mas grandes
+            </big><br>
+            <code>
+        nos permite ecribir codigo de programacion en texto para mostrarlo <br>
+        alert('Hello World')
+            </code><br>
+            la etiqueta sup muestra un texto <sup>elevado</sup><br>
+            y la etiqueta sub lo muestra <sub>debajo</sub><br>
+            <cite>la etiqueta cite es para citar textos de otros autores</cite>
+            la etiqueta wbr es para dar saltos de linea cuando se angoste la pagina <br>
+            la etiqueta span es para personalizar palabras determinadas con css.
+        </p>
+
+        <embed src="https://vuelaaltoltda.000webhostapp.com/" width="100%" height="20%">
+        <!--sirve para colocar contenido interactivo desde otra pagina u archivos-->
+
+        <object data="img/Logotipo.png">
+            <!--funciona igual que el iframe-->
+            <param name="param" value="10">
+            <!--parametros para la etiqueta object-->
+            etiqueta object
+        </object>
+        <audio src="audio/Alborosie   Natural Mystic.mp3#t=60,65" controls>
+            <!--etiqueta de audio #t= permite iniciar reproducion en los segundos que se requieran-->
+        </audio>
+
+        <audio src="audio//Alborosie  Real Story.mp3" controls>
+        </audio>
+
+        <video src="video/VID_20221127_100016.mp4#t=,1" controls autoplay width="100%">
+            <!--etiqueta de video-->
+            <track src="subEs/es.vtt" kind="subtitles" label="Español" srclang="es">
+            </track>
+            <!---Etiqueta que nos permite subtitlular los videos o audios-->
+            <track src="subEs/en.vtt" kind="subtitles" label="Ingles" srclang="en">
+            </track>
+        </video>
+
+        <canvas id="canvas" height="400" width="500" style="border: 5px solid black;">
+
+        </canvas>
+        <script>
+            var c= document.getElementById('canvas');
+            var ct = c.getContext ('2d');
+            //rectangulos en canvas
+            ct.fillStyle ='blue';
+            ct.fillRect (200, 200, 100, 100);
+        
+            ct.fillStyle ='green';
+            ct.fillRect (300, 300, 100, 100);
+
+            ct.strokeRect(150, 150, 50, 50);
+
+            // carita feliz con canvas
+            ct.beginPath();
+            ct.strokeStyle = 'rgba(23, 66, 136, 0.51)';
+
+            ct.arc(75, 75, 50, 0, Math.PI * 2, true);
+            ct.moveTo (110,75);
+
+            ct.arc(75, 75, 35, 0, Math.PI , false);
+            ct.moveTo (65,65);
+
+            ct.arc (60, 65, 5, 0, Math.PI*2, true);
+            ct.moveTo(95, 65);
+
+            ct.arc(90, 65, 5, 0, Math.PI*2, true);
+
+            ct.stroke();
+        </script>
+
+        <svg width="100%" heigth="1000" style="border: 3px solid black;">
+            <!--grafico vectorial escalable-->
+            <rect x="30" y="30" width="50" heigth="50" fill="green" stroke="blue" />
+
+            <circle cx="100" cy="60" r="50" fill="green" stroke="red" stroke-width="10" />
+
+            <ellipse cx="300" cy="60" rx="70" ry="50" fill="blue" stroke="black" stroke-width="10" />
+        </svg>
+
+      <details> <!--detalles en lista desplegable-->
+        <summary>etiqueta detalles y sumary</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde id est voluptatibus quod blanditiis provident vel doloremque assumenda in necessitatibus quis neque earum molestias voluptate, ratione sit minus voluptatum fugiat doloribus ipsa, reiciendis sint ut. Sit vero aspernatur ratione quod accusantium, nihil dolor perspiciatis, odio, id aliquam blanditiis quam numquam!</p>
+      </details>
+
+      <details> <!--detalles en lista desplegable-->
+        <summary>etiqueta detalles y sumary</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde id est voluptatibus quod blanditiis provident vel doloremque assumenda in necessitatibus quis neque earum molestias voluptate, ratione sit minus voluptatum fugiat doloribus ipsa, reiciendis sint ut. Sit vero aspernatur ratione quod accusantium, nihil dolor perspiciatis, odio, id aliquam blanditiis quam numquam!</p>
+      </details><br>
+        
+
+        <footer>
+            <!--pie de pagina para agregar alguna informacion enlaces etc-->
+            pide de pagina
+        </footer>
+    </main>
+</body>
+
+</html>
